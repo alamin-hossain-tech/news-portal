@@ -35,11 +35,11 @@ let displayNews = (news, categoryName) => {
   let newarray = news.sort((a, b) =>
     b.total_view > a.total_view ? 1 : b.total_view < a.total_view ? -1 : 0
   );
-
+  console.log(news.length, typeof news.length);
   newarray.forEach((post) => {
     totalItem.innerText = `${
-      news.length != 0 ? news.length : "No data Found"
-    } items found for category ${categoryName}`;
+      news.length !== 0 ? news.length : "No data Found"
+    } items found for category: ${categoryName}`;
 
     let article = document.createElement("div");
     article.classList.add("row");

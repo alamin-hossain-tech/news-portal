@@ -1,0 +1,7 @@
+#categories li {
+  list-style: none;
+}
+
+#categories li:hover {
+  color: #1f1ade;
+}
